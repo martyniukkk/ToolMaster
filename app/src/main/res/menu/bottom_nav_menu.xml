@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_todo"
+        android:icon="@drawable/task_alt_24px"
+        android:title="Todo" />
+
+    <item
+        android:id="@+id/nav_timer"
+        android:icon="@drawable/timer_24px"
+        android:title="Timer" />
+
+    <item
+        android:id="@+id/nav_flashlight"
+        android:icon="@drawable/flashlight_on_24px"
+        android:title="Flashlight" />
+
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/info_24px"
+        android:title="Info" />
+</menu>

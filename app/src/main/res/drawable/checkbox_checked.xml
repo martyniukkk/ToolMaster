@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="24dp"
+                android:height="24dp" />
+            <solid android:color="@color/bright_yellow" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/primary_text" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    <!-- Checkmark -->
+    <item
+        android:drawable="@drawable/check_24px"
+        android:gravity="center" />
+</layer-list>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tool Master</string>
+    <string name="welcome">Welcome</string>
+    <string name="about_text">To the most convenient app in the world! In the Tool Master app you will find these tools: Todo, Timer and Flashlight. And all of this just in one single app!</string>
+    <string name="info_text">Tool Master is your all-in-one solution for daily tasks. With a built-in Todo list for organizing tasks, a Timer to keep track of time, and a Flashlight for quick access to light in dark environments, Tool Master brings convenience to your fingertips—all within a single, easy-to-use app!</string>
+    <string name="about">About</string>
+    <string name="start">Start</string>
+    <string name="tasks">Tasks:</string>
+    <string name="completed">Completed:</string>
+    <string name="empty">Empty</string>
+    <string name="todo">Todo</string>
+    <string name="hi_user">Hi, User</string>
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="name">Name</string>
+    <string name="confirm">Confirm</string>
+    <string name="hh_mm_ss">HH:MM:SS</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="_0">0</string>
+</resources>
