@@ -1,21 +1,5 @@
 package com.tool.master.di
 
-import com.tool.master.data.about_storage.AboutStorage
-import com.tool.master.data.about_storage.AboutStorageImpl
-import com.tool.master.data.flashlight_manager.FlashlightManager
-import com.tool.master.data.flashlight_manager.FlashlightManagerImpl
-import com.tool.master.data.repository.AboutRepositoryImpl
-import com.tool.master.data.repository.FlashlightRepositoryImpl
-import com.tool.master.data.repository.TimerRepositoryImpl
-import com.tool.master.data.repository.TodoRepositoryImpl
-import com.tool.master.data.timer_manager.TimerManager
-import com.tool.master.data.timer_manager.TimerManagerImpl
-import com.tool.master.data.todo_storage.TodoStorage
-import com.tool.master.data.todo_storage.TodoStorageImpl
-import com.tool.master.domain.repository.AboutRepository
-import com.tool.master.domain.repository.FlashlightRepository
-import com.tool.master.domain.repository.TimerRepository
-import com.tool.master.domain.repository.TodoRepository
 import org.koin.dsl.module
 
 val dataModule = module {

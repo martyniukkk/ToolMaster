@@ -3,10 +3,11 @@ package com.tool.master.presentation.fragment.timer
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.tool.master.domain.usecase.timer.StartTimerUseCase
-import com.tool.master.domain.usecase.timer.StopTimerUseCase
 
-class TimerViewModel(private val startTimerUseCase: com.tool.master.domain.usecase.timer.StartTimerUseCase, private val stopTimerUseCase: com.tool.master.domain.usecase.timer.StopTimerUseCase) :
+class TimerViewModel(
+    private val startTimerUseCase: com.tool.master.domain.usecase.timer.StartTimerUseCase,
+    private val stopTimerUseCase: com.tool.master.domain.usecase.timer.StopTimerUseCase
+) :
     ViewModel() {
 
     private val _timeLeft = MutableLiveData<Long>()

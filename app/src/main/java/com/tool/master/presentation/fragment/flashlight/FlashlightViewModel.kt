@@ -3,8 +3,6 @@ package com.tool.master.presentation.fragment.flashlight
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.tool.master.domain.usecase.flashlight.DisableFlashlightUseCase
-import com.tool.master.domain.usecase.flashlight.EnableFlashlightUseCase
 
 class FlashlightViewModel(
     private val enableFlashlightUseCase: com.tool.master.domain.usecase.flashlight.EnableFlashlightUseCase,

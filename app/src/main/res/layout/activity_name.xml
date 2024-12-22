@@ -10,61 +10,61 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical"
-            android:paddingVertical="10dp"
-            android:gravity="center">
+            android:paddingVertical="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primary_text"
-                android:textAlignment="center"
                 android:fontFamily="@font/dosis_bold"
-                android:textSize="38sp"
-                android:text="@string/what_s_your_name" />
+                android:text="@string/what_s_your_name"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="38sp" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="260dp"
-                android:adjustViewBounds="true"
                 android:layout_marginTop="10dp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/char2"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:src="@drawable/char2" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
                 android:id="@+id/ediText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/edit_text_background"
-                android:textCursorDrawable="@drawable/et_cursor"
                 android:layout_marginBottom="10dp"
-                android:hint="@string/name"
-                android:textColor="@color/primary_text"
+                android:background="@drawable/edit_text_background"
                 android:fontFamily="@font/dosis_bold"
-                android:padding="10dp"
+                android:hint="@string/name"
                 android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/primary_text"
+                android:textCursorDrawable="@drawable/et_cursor"
                 android:textSize="30sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/confirm"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/dosis_bold"
-                android:textSize="38sp"
                 android:background="@drawable/button_background"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:fontFamily="@font/dosis_bold"
+                android:paddingVertical="10dp"
                 android:text="@string/confirm"
-                android:paddingVertical="10dp" />
+                android:textColor="@color/white"
+                android:textSize="38sp" />
 
         </LinearLayout>
 

@@ -1,10 +1,10 @@
 package com.tool.master.presentation.app
 
 import android.app.Application
+import com.orhanobut.hawk.Hawk
 import com.tool.master.di.appModule
 import com.tool.master.di.dataModule
 import com.tool.master.di.domainModule
-import com.orhanobut.hawk.Hawk
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

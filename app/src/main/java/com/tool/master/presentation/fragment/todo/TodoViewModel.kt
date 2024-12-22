@@ -3,12 +3,6 @@ package com.tool.master.presentation.fragment.todo
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.tool.master.domain.model.Todo
-import com.tool.master.domain.model.TodoList
-import com.tool.master.domain.usecase.todo.GetTodoListUseCase
-import com.tool.master.domain.usecase.todo.RemoveTodoUseCase
-import com.tool.master.domain.usecase.todo.SaveTodoUseCase
-import com.tool.master.domain.usecase.todo.UpdateTodoUseCase
 
 class TodoViewModel(
     private val getTodoListUseCase: com.tool.master.domain.usecase.todo.GetTodoListUseCase,

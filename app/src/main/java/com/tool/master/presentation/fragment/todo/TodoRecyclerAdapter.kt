@@ -4,10 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.tool.master.R
-import com.tool.master.domain.model.TodoList
 import com.kongzue.dialogx.dialogs.MessageDialog
 import com.kongzue.dialogxmaterialyou.style.MaterialYouStyle
+import com.tool.master.R
 
 class TodoRecyclerAdapter(
     private val context: Context,

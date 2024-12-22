@@ -3,61 +3,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background_gradient"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context=".presentation.activity.about.AboutActivity">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.85"
-        app:layout_constraintWidth_percent="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/primary_text"
             android:fontFamily="@font/dosis_bold"
-            android:textSize="38sp"
-            android:text="@string/welcome" />
+            android:text="@string/welcome"
+            android:textColor="@color/primary_text"
+            android:textSize="38sp" />
 
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/secondary_text"
             android:fontFamily="@font/dosis_medium"
+            android:text="@string/about_text"
             android:textAlignment="center"
-            android:textSize="28sp"
-            android:text="@string/about_text" />
+            android:textColor="@color/secondary_text"
+            android:textSize="28sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/char2"
             app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/char2" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/start"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:fontFamily="@font/dosis_bold"
-            android:textSize="38sp"
             android:background="@drawable/button_background"
-            style="@style/Widget.AppCompat.Button.Borderless"
+            android:fontFamily="@font/dosis_bold"
+            android:paddingVertical="10dp"
             android:text="@string/start"
-            android:paddingVertical="10dp" />
+            android:textColor="@color/white"
+            android:textSize="38sp" />
 
     </LinearLayout>
 

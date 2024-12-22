@@ -3,11 +3,11 @@ package com.tool.master.presentation.activity.name
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.kongzue.dialogx.dialogs.PopTip
+import com.orhanobut.hawk.Hawk
 import com.tool.master.databinding.ActivityNameBinding
 import com.tool.master.presentation.activity.about.AboutViewModel
 import com.tool.master.presentation.activity.fragments.FragmentsActivity
-import com.kongzue.dialogx.dialogs.PopTip
-import com.orhanobut.hawk.Hawk
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class NameActivity : AppCompatActivity() {

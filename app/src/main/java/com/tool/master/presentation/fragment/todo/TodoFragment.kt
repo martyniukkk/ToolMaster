@@ -8,7 +8,6 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tool.master.databinding.FragmentTodoBinding
-import com.tool.master.domain.model.Todo
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 
 class TodoFragment : Fragment() {
@@ -33,10 +32,11 @@ class TodoFragment : Fragment() {
 
         binding.buttonAdd.setOnClickListener {
             TodoDialogHelper.showInputDialog("Add item", "Add") { inputText ->
-                viewModel.saveTodo(todo = com.tool.master.domain.model.Todo(
-                    text = inputText,
-                    isChecked = false
-                )
+                viewModel.saveTodo(
+                    todo = com.tool.master.domain.model.Todo(
+                        text = inputText,
+                        isChecked = false
+                    )
                 )
             }
         }

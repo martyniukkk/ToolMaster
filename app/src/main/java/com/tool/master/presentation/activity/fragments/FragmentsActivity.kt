@@ -3,13 +3,13 @@ package com.tool.master.presentation.activity.fragments
 import android.os.Bundle
 import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatActivity
+import com.orhanobut.hawk.Hawk
 import com.tool.master.R
 import com.tool.master.databinding.ActivityFragmentsBinding
 import com.tool.master.presentation.fragment.flashlight.FlashlightFragment
 import com.tool.master.presentation.fragment.info.InfoFragment
 import com.tool.master.presentation.fragment.timer.TimerFragment
 import com.tool.master.presentation.fragment.todo.TodoFragment
-import com.orhanobut.hawk.Hawk
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FragmentsActivity : AppCompatActivity() {

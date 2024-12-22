@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.fragment.timer.TimerFragment">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="280dp"
@@ -28,37 +28,37 @@
                     android:id="@+id/timerText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/primary_text"
                     android:layout_centerInParent="true"
                     android:fontFamily="@font/dosis_bold"
-                    android:textSize="38sp"
-                    android:text="@string/_00_00_00" />
+                    android:text="@string/_00_00_00"
+                    android:textColor="@color/primary_text"
+                    android:textSize="38sp" />
 
                 <com.vicmikhailau.maskededittext.MaskedEditText
                     android:id="@+id/editText"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edit_text_background"
-                    android:hint="@string/hh_mm_ss"
-                    android:textAlignment="center"
-                    android:padding="10dp"
                     android:layout_centerInParent="true"
-                    android:textCursorDrawable="@drawable/et_cursor"
-                    app:mask="##:##:##"
-                    android:maxLength="8"
-                    android:inputType="time"
+                    android:background="@drawable/edit_text_background"
                     android:fontFamily="@font/dosis_medium"
-                    android:textSize="38sp" />
+                    android:hint="@string/hh_mm_ss"
+                    android:inputType="time"
+                    android:maxLength="8"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@drawable/et_cursor"
+                    android:textSize="38sp"
+                    app:mask="##:##:##" />
 
                 <com.mikhaellopez.circularprogressbar.CircularProgressBar
                     android:id="@+id/circularProgressBar"
                     android:layout_width="match_parent"
                     android:layout_height="280dp"
+                    android:layout_centerInParent="true"
                     app:cpb_background_progressbar_color="@color/white"
                     app:cpb_background_progressbar_width="10dp"
-                    app:cpb_progress_direction="to_left"
-                    android:layout_centerInParent="true"
                     app:cpb_progress="0"
+                    app:cpb_progress_direction="to_left"
                     app:cpb_progressbar_color="@color/muted_orange"
                     app:cpb_progressbar_width="10dp"
                     app:cpb_round_border="true" />
@@ -67,16 +67,16 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/start"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/dosis_bold"
-                android:textSize="38sp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/button_background"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:fontFamily="@font/dosis_bold"
+                android:paddingVertical="10dp"
                 android:text="@string/start"
-                android:paddingVertical="10dp" />
+                android:textColor="@color/white"
+                android:textSize="38sp" />
 
         </LinearLayout>
 
