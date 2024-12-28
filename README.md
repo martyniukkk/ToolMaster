@@ -24,7 +24,7 @@ Tool Master is built with modern Android development techniques and a robust arc
 </p>
 
 ## ⚙️ Installation  
-1. Clone the repository: `git clone https://github.com/martunyuk/ToolMaster.git`
+1. Clone the repository: `git clone https://github.com/martyniukkk/ToolMaster.git`
 2. Open the project in Android Studio.  
 3. Sync Gradle to download required dependencies.  
 4. Run the app on your emulator or physical device.  
